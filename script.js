@@ -69,13 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show popup
         activityPopup.classList.add('show');
         
-        // Hide after 3 seconds
+        // Hide after 2.5 seconds
         setTimeout(() => {
             activityPopup.classList.remove('show');
-        }, 3000);
+        }, 2500);
         
-        // Schedule next popup (random between 4 to 6 seconds after current hides)
-        const nextInterval = Math.floor(Math.random() * (6000 - 4000 + 1)) + 4000 + 3000;
+        // Schedule next popup (1.5 seconds baad aayega)
+        const nextInterval = 2500 + 1500;
         setTimeout(showActivityPopup, nextInterval);
     }
     
